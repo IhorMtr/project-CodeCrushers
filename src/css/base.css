@@ -1,32 +1,126 @@
 :root {
-  /* font-family: Inter, Avenir, Helvetica, Arial, sans-serif; */
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  --main: #0c0c0c;
+  --accent: #3350e9;
+  --cards: #f3f3f3;
+  --background: #fbfbfb;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  min-width: 100vw;
-  min-height: 100vh;
+  font-family: 'Gilroy', 'Sans-serif';
+  margin: 0;
+  background-color: #fff;
+  color: var(--main);
+  letter-spacing: -0.02em;
+}
+
+p {
+  line-height: 1.25;
+  font-weight: 500;
+  color: rgba(12, 12, 12, 0.7);
+}
+
+@media only screen and (max-width: 375px) {
+  p {
+    font-size: 14px;
+    line-height: 1.29;
+    font-weight: 500;
+  }
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 0.95;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 70px;
+    line-height: 0.86;
+  }
+
+  h2 {
+    font-size: 48px;
+    line-height: 0.92;
+  }
+
+  h3 {
+    font-size: 20px;
+    line-height: 1;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  h1 {
+    font-size: 72px;
+    line-height: 0.87;
+  }
+}
+
+address {
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
 }
 
-main {
-  flex-grow: 1;
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-main:has(.back-link) {
-  text-align: center;
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

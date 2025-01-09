@@ -3,24 +3,82 @@
       rgba(12, 12, 12, 0.8),
       rgba(12, 12, 12, 0.8)
     ),
-    url(../img/advertisement-bg.jpg);
+    url(../img/advertisement-bg-mob.jpg);
+  background-color: #0c0c0c;
   border-radius: 30px;
-
-  /* padding: 60px 28px; */
-  padding: 83px 80px;
-  display: flex;
-  gap: 140px;
-  justify-content: space-between;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 28px;
 }
 
-.advertisement-title {
-  font-size: 48px;
-  line-height: 0.92;
+.advertisement-text {
+  font-size: 32px;
+  line-height: 1;
   letter-spacing: -0.02em;
   color: #fbfbfb;
-  max-width: 690px;
+  margin-bottom: 28px;
 }
 
-.advertisement-title-span {
+.advertisement-text-span {
   color: rgba(251, 251, 251, 0.5);
+}
+
+.advertisement-link-button {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: #fbfbfb;
+  border: 1px solid rgba(251, 251, 251, 0.15);
+  border-radius: 16px;
+  padding: 15px 44px;
+  transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms,
+    background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+@media only screen and (min-width: 768px) {
+  .advertisement-container {
+    background-image: linear-gradient(
+        rgba(12, 12, 12, 0.8),
+        rgba(12, 12, 12, 0.8)
+      ),
+      url(../img/advertisement-bg-tab.jpg);
+    padding: 80px 64px;
+  }
+
+  .advertisement-text {
+    font-size: 48px;
+    line-height: 0.92;
+    margin-bottom: 32px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .advertisement-container {
+    background-image: linear-gradient(
+        rgba(12, 12, 12, 0.8),
+        rgba(12, 12, 12, 0.8)
+      ),
+      url(../img/advertisement-bg.jpg);
+    padding: 83px 80px;
+    display: flex;
+    gap: 140px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .advertisement-text {
+    font-size: 48px;
+    line-height: 0.92;
+    margin-bottom: 32px;
+    max-width: 690px;
+  }
+
+  .advertisement-link-button:focus,
+  .advertisement-link-button:hover {
+    color: #0c0c0c;
+    background-color: #fbfbfb;
+  }
 }

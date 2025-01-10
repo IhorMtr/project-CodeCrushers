@@ -1,7 +1,26 @@
 .hero {
     max-width: 375px;
-    padding: 0 20px;
+    padding: 60px 20px 0 20px;
+    margin-bottom: 60px;
 }
+@media screen and (min-width: 768px) {
+.hero {
+    max-width: 768px;
+    padding: 80px 32px 0px 32px;
+    margin-bottom: 80px;
+    position: relative;
+}
+}
+@media screen and (min-width: 1280px) {
+.hero {
+     padding: 80px 65px 0px 65px;
+      width: 1280px;
+    margin-bottom: 100px;
+}
+}
+
+
+
 .title-hero {
 font-family: var(--font-family);
 font-weight: 600;
@@ -9,12 +28,29 @@ font-size: 40px;
 line-height: 95%;
 letter-spacing: -0.02em;
 color: var(--main);
-padding-top: 60px;
 padding-bottom: 20px;
 }
 
+
 .title-part {
 color: var(--accent);
+}
+
+@media screen and (min-width: 768px) {
+    .title-hero {
+        font-size: 70px;
+        line-height: 86%;
+        width: 557px;
+        
+    }
+}
+@media screen and (min-width: 1280px) {
+    .title-hero {
+        font-size: 72px;
+        line-height: 87%;
+        width: 597px;
+    }
+       
 }
 .text-hero {
 font-family: var(--font-family);
@@ -23,13 +59,58 @@ font-size: 14px;
 line-height: 129%;
 letter-spacing: -0.02em;
 color: rgba(12, 12, 12, 0.7);
+padding-bottom: 28px;
+}
+@media screen and (min-width: 768px) {
+    .text-hero {
+       font-size: 16px;
+       line-height: 125%;
+       width: 480px;
+    padding-bottom: 40px;
+            
+    }
+
+}
+@media screen and (min-width: 1280px) {
+    
+
 }
 .container-avatar {
-display: block;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 28px;
+}
+@media screen and (min-width: 768px) {
+    .container-avatar {
+        width: 136px;
+        flex-direction: column;
+        gap: 180px;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        padding-bottom: 0;
     
+        
+    }
+        .tex-scroll {
+            text-align: right;
+
+        }
+
+
 }
 .list-avatar {
     display: flex;
+}
+.hero-avatar {
+    border-radius: 50%;
+    
+}
+.list-blok:nth-child(even) {
+    transform: translateX(-11px);
+}
+.list-blok:last-child {
+    transform: translateX(-22px);
 
 }
 .tex-scroll {
@@ -41,4 +122,31 @@ display: block;
         text-decoration: underline;
         text-decoration-skip-ink: none;
         color: var(--main);
+        padding-top: 26px;
+        
+}
+@media screen and (min-width: 768px) {
+    .tex-scroll {
+       
+        font-size: 20px;
+        line-height: 100%;
+        padding: 0;
+    }
+}
+
+.container-watches-hero {
+    max-width: 704px;
+    /*background-image: rgba(12, 12, 12, 0.2), url("../img/hero_img/watches_hero.jpg");
+    display: block;
+        max-width: 100%;*/
+    }
+    
+
+
+
+.watches-hero {
+    display: block;
+    max-width: 100%;
+    border-radius: 50px;
+    
 }

@@ -1,4 +1,4 @@
-<section class="hero">
+<section class="hero" id="hero-section">
   <div class="container-hero">
     <h1 class="title-hero">
       Welcome to our <span class="title-part">collection</span> of premium
@@ -13,33 +13,65 @@
       <ul class="list-avatar">
         <li class="list-blok">
           <img
-            class="avatar"
-            src="../img/hero_img/without_glasses@x2 (1).png"
+            class="hero-avatar"
+            src="../img/hero_img/without_glasses@x2 (1).jpg"
             alt="Vumen without glasses"
             width="44"
+            height="44"
           />
         </li>
         <li class="list-blok">
           <img
-            class="avatar"
-            src="../img/hero_img/man_with_glasses@x2.png"
+            class="hero-avatar"
+            src="../img/hero_img/man_with_glasses.jpg"
             alt="Vumen without glasses"
             width="44"
+            height="44"
           />
         </li>
         <li class="list-blok">
           <img
-            class="avatar"
-            src="../img/hero_img/woman_with_glasses@x2.png"
+            class="hero-avatar"
+            src="../img/hero_img/wumen_with_glasses.jpg"
             alt="Vumen without glasses"
             width="44"
+            height="44"
           />
         </li>
       </ul>
       <p class="tex-scroll"><u class="line">Scroll down</u></p>
     </div>
-    <div>
-      <img src="../img/hero_img/watches_hero.jpg" alt="Watches end hero" />
+    <div class="container-watches-hero">
+      <picture>
+        <source
+          srcset="
+            ./images/example_desktop.jpg    1x,
+            ./images/example_desktop@2x.jpg 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./images/example_tablet.jpg    1x,
+            ./images/example_tablet@2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/example_mobile.jpg    1x,
+            ./images/example_mobile@2x.jpg 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img src="./images/example_mobile.jpg" alt="example" loading="lazy" />
+      </picture>
+
+      <img
+        class="watches-hero"
+        src="../img/hero_img/watches_hero.jpg"
+        alt="Watches end hero"
+      />
     </div>
   </div>
 </section>

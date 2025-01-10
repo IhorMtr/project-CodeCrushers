@@ -19,15 +19,18 @@ margin-bottom: 28px;
 }
 .about-btn {
     display: inline-block;
-    padding: 15px 20px;
+    padding: 15px 38px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.28;
     text-align: center;
     border-radius: 16px;
+    color: #fbfbfb;
     width: 160px;
     height: 48px;
+    background: #3350e9;
     transition: background-color 0.3s ease; 
+    margin-bottom: 40px;
    
 }
 .about-btn:focus,

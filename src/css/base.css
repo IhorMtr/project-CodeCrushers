@@ -95,11 +95,6 @@ a {
   text-decoration: none;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-}
-
 button {
   cursor: pointer;
   font-family: inherit;

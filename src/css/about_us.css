@@ -1,8 +1,17 @@
 .about {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background: #f3f3f3;
+    margin-top: 30px;
+   
+   
 }
+.about-content {
+    border-radius: 30px;
+    background: #f3f3f3;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    
+    
+}
+
 
 .about-title {
 letter-spacing: -0.02em;
@@ -28,6 +37,8 @@ margin-bottom: 28px;
     border-radius: 16px;
     width: 160px;
     height: 48px;
+    color: #fbfbfb;
+    background: #3350e9;
     transition: background-color 0.3s ease; 
    
 }
@@ -40,7 +51,40 @@ margin-bottom: 28px;
 
 @media screen and (min-width: 768px) {
     .about {
-        padding-top: 80px;
-        padding-bottom: 80px;
+       margin-top: 40px;
+       margin-bottom: 40px;
+    }
+    .about-title {
+        margin-bottom: 40px;
+        font-size: 48px;
+    }
+    .about-text {
+        font-size: 16px;
+    }
+    .item {
+        margin-bottom: 60px;
+    }
+    .about-content {
+        padding: 80px 60px;
+        border-radius: 50px;
+    }
+    
+}
+
+@media screen and (min-width: 1280px) {
+    .about-container {
+        display: flex;
+        gap: 40px;
+        
+    }
+    .about {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .about-title {
+        margin-bottom: 40px;
+    }
+    .about-content {
+        max-width: 580px;
     }
 }

@@ -8,6 +8,8 @@
     background: #f3f3f3;
     padding: 40px 20px;
     margin-bottom: 20px;
+   
+  
     
     
 }
@@ -82,12 +84,18 @@ margin-bottom: 28px;
     }
     .about {
         margin-top: 50px;
-        margin-bottom: 50px;
+        
     }
     .about-title {
         margin-bottom: 40px;
     }
     .about-content {
-        max-width: 580px;
+        width: 530px;
+        height: 532px;
+        
+    }
+    .about-img {
+        width: 530px;
+        height: 532px;
     }
 }

@@ -68,6 +68,9 @@ margin-bottom: 28px;
         padding: 80px 60px;
         border-radius: 50px;
     }
+    .about-img {
+        width: 100%;
+    }
     
 }
 

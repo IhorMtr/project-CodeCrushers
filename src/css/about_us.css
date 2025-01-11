@@ -41,7 +41,7 @@ margin-bottom: 28px;
     height: 48px;
     color: #fbfbfb;
     background: #3350e9;
-    transition: background-color 0.3s ease; 
+    transition: background-color 250ms ease; 
    
 }
 .about-btn:focus,
@@ -90,12 +90,15 @@ margin-bottom: 28px;
         margin-bottom: 40px;
     }
     .about-content {
-        width: 530px;
-        height: 532px;
+        width: 580px;
+        /*height: 532px;*/
         
     }
     .about-img {
-        width: 530px;
-        height: 532px;
+        /*width: 530px;
+        height: 532px;*/
+    }
+    .about-btn  {
+
     }
 }

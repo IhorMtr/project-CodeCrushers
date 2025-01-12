@@ -2,12 +2,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .header-logo-ref {
     font-weight: 500;
     font-size: 16px;
-    letter-spacing: -0.02em;
-    color: #0c0c0c;
     text-decoration: none;
 }
 
@@ -15,7 +15,7 @@
     stroke: #0c0c0c;
 }
 .header-menu-btn {
-    margin: 0;
+    padding: 0;
     border: none;
     background-color: transparent;
 }
@@ -29,6 +29,10 @@
 
     .header-logo-ref {
         font-size: 20px;
+    }
+    .header{
+        padding-top: 26px;
+        padding-bottom: 26px;
     }
 
 }
@@ -71,7 +75,7 @@
             font-size: 14px;
             line-height: 1.28571;
             text-align: center;
-            color: #0c0c0c;
+            
         }
     
         .header-social-icon:hover {

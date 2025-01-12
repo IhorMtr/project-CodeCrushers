@@ -21,5 +21,14 @@
     "vite-plugin-html-inject": "^1.1.2"
   },
   "description": "Додайте собі файлик у репозиторій з назвою \" pullrequests.txt \" в якому ви\r можете зберігати посилання на свої pullrequests для подальшої відправки їх на\r перевірку",
-  "main": "vite.config.js"
+  "main": "vite.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IhorMtr/project-CodeCrushers.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/IhorMtr/project-CodeCrushers/issues"
+  },
+  "homepage": "https://github.com/IhorMtr/project-CodeCrushers#readme"
 }

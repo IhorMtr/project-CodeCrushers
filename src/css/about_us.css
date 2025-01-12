@@ -49,6 +49,9 @@ margin-bottom: 28px;
     background: #1f3cd4;
    
 }
+.about-img {
+    height: 446px;
+}
 
 
 @media screen and (min-width: 768px) {

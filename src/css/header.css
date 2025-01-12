@@ -83,11 +83,12 @@
             fill: #3350e9;
         }
     
-        .header-nav-list .header-nav-list-item:first-child .header-nav-list-item-link {
+        
+         .header-nav-list-item-link {
             position: relative;
-        }
+         }
     
-        .header-nav-list .header-nav-list-item:first-child .header-nav-list-item-link::after {
+        .header-nav-list .header-link-is-active .header-nav-list-item-link::after {
             content: " ";
             position: absolute;
             left: 50%;

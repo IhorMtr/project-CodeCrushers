@@ -6,6 +6,7 @@
         width: 100%;
         height: 100%;
         z-index: 9999999;
+        background-color: rgba(12, 12, 12, 0.2);
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
@@ -18,7 +19,8 @@
     pointer-events: auto;}
 
 .mobile-menu:not(.is-open) .menu {
-    transform: translate(-50%, -50%) scale(1.5);
+
+    transform: scale(1.5);
 }
 
 
@@ -26,16 +28,15 @@
     position: absolute;
     display: flex;
     flex-direction: column;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    right: 0;
     width: 200px;
     height: 100%;
     padding-top: 240px;
     padding-bottom: 40px;
     background-image: url(../img/background_modal@1x.jpg);
 }
-@media screen and (max-width: 767.98px) and (min-resolution: 192dpi) {
+@media screen and (max-width: 768px) and (min-resolution: 192dpi) {
     .menu {
         background-image: 
             url(../img/background_modal@2x.jpg);
@@ -96,6 +97,7 @@
     top: calc(100% + 7px);
     width: 8px;
     height: 8px;
+    background-color: var(--accent);
 }
 
 .activ-menu-link:focus::after,
@@ -151,7 +153,7 @@ background-color: var(--accent);
 
 
 
-@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+@media screen and (min-width: 768px) and (max-width: 1280px) and (min-resolution: 192dpi) {
 .menu {
     background-image: url(../img/background_tab@2x.jpg);
     }

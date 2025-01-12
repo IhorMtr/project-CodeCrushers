@@ -1,21 +1,21 @@
 .hero {
+    min-width: 320px;
     max-width: 375px;
     padding: 60px 20px 0 20px;
-    margin-bottom: 60px;
+    
 }
 @media screen and (min-width: 768px) {
 .hero {
     max-width: 768px;
-    padding: 80px 32px 0px 32px;
-    margin-bottom: 80px;
-    position: relative;
+    padding: 80px 32px 0 32px;
+   position: relative;
 }
 }
 @media screen and (min-width: 1280px) {
 .hero {
      padding: 80px 65px 0px 65px;
-      width: 1280px;
-    margin-bottom: 100px;
+      max-width: 1280px;
+    
 }
 }
 
@@ -75,28 +75,34 @@ padding-bottom: 28px;
     
 
 }
-.container-avatar {
+.container-hero-avatar {
     display: flex;
     justify-content: space-between;
     padding-bottom: 28px;
 }
 @media screen and (min-width: 768px) {
-    .container-avatar {
-        width: 136px;
+    .container-hero-avatar {
+        
         flex-direction: column;
         gap: 180px;
         position: absolute;
         top: 80px;
-        right: 20px;
+        right: 32px;
         padding-bottom: 0;
+        
     
         
     }
         .tex-scroll {
             text-align: right;
-
         }
-
+}
+@media screen and (min-width: 1280px) {
+    .container-hero-avatar {
+        gap: 189px;
+        right: 65px;
+        
+    }
 
 }
 .list-avatar {
@@ -106,12 +112,46 @@ padding-bottom: 28px;
     border-radius: 50%;
     
 }
+@media screen and (min-width: 768px) {
+    .hero-avatar {
+            width: 56px;
+            height: 56px;
+        }
+                .list-avatar {
+                    transform: translateX(29px);
+                }
+}
+@media screen and (min-width: 1280px) {
+    .hero-avatar {
+        width: 60px;
+            height: 60px;
+    }
+        .list-avatar {
+            transform: translateX(29px);
+    }
+}
 .list-blok:nth-child(even) {
     transform: translateX(-11px);
 }
 .list-blok:last-child {
     transform: translateX(-22px);
 
+}
+@media screen and (min-width: 768px) {
+    .list-blok:nth-child(even) {
+            transform: translateX(-15px);
+    }
+    .list-blok:last-child {
+         transform: translateX(-30px);
+        
+    }
+
+}
+@media screen and (min-width: 1280px) {
+    .list-blok:last-child {
+            transform: translateX(-29px);
+    
+        }
 }
 .tex-scroll {
     font-family: var(--font-family);
@@ -135,11 +175,22 @@ padding-bottom: 28px;
 }
 
 .container-watches-hero {
-    max-width: 704px;
-    /*background-image: rgba(12, 12, 12, 0.2), url("../img/hero_img/watches_hero.jpg");
+    width: 335px;
+    background-image: rgba(12, 12, 12, 0.2);
     display: block;
-        max-width: 100%;*/
+        max-width: 100%;
     }
+@media screen and (min-width: 768px) {
+    .container-watches-hero {
+        width: 704px;
+    }
+
+}
+@media screen and (min-width: 1280px) {
+    .container-watches-hero {
+            width: 1150px;
+        }
+}
     
 
 

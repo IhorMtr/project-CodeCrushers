@@ -1,4 +1,4 @@
-<section class="hero" id="hero-section">
+<section class="container hero" id="hero-section">
   <div class="container-hero">
     <h1 class="title-hero">
       Welcome to our <span class="title-part">collection</span> of premium
@@ -15,51 +15,97 @@
           <picture>
             <source
               srcset="
-                ../img/hero_img/bc_avatar/bc_without_glasses.jpg,
-                ../img/hero_img/bc_avatar/bc_without_glasses@2x.jpg
+                ./img/bc_without_glasses.jpg x1,
+                ./img/bc_without_glasses@2x.jpg 2x
               "
               media="(min-width: 1280px)"
             />
             <source
               srcset="
-                ../img/hero_img/tablet_avatar/tablet_without_glasses.jpg,
-                ../img/hero_img/tablet_avatar/tablet_without_glasses@2x.jpg
+                ./img/tablet_without_glasses.jpg x1,
+                ./img/tablet_without_glasses@2x.jpg 2x
               "
               media="(min-width: 768px)"
             />
             <source
               srcset="
-                ../img/hero_img/without_glasses.jpg,
-                ../img/hero_img/without_glasses@x2.jpg
+                ./img/without_glasses.jpg    1x,
+                ./img/without_glasses@2x.jpg 1x
               "
               media="(max-width: 767px)"
             />
             <img
               class="hero-avatar"
-              src="../img/hero_img/without_glasses@x2 (1).jpg"
-              alt="Vumen without glasses"
+              src="./img/without_glasses.jpg"
+              alt="Without glasses"
               width="44"
               height="44"
             />
           </picture>
         </li>
         <li class="list-blok">
-          <img
-            class="hero-avatar"
-            src="../img/hero_img/man_with_glasses.jpg"
-            alt="Vumen without glasses"
-            width="44"
-            height="44"
-          />
+          <picture>
+            <source
+              srcset="
+                ./img/bc_man_with_glasses.jpg x1,
+                ./img/bc_man_with_glasses@2x.jpg 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./img/tablet_man_with_glasses.jpg    1x,
+                ./img/tablet_man_with_glasses@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./img/man_with_glasses.jpg    1x,
+                ./img/man_with_glasses@2x.jpg 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img
+              class="hero-avatar"
+              src="./img/man_with_glasses.jpg"
+              alt="Man with glasses"
+              width="44"
+              height="44"
+            />
+          </picture>
         </li>
         <li class="list-blok">
-          <img
-            class="hero-avatar"
-            src="../img/hero_img/wumen_with_glasses.jpg"
-            alt="Vumen without glasses"
-            width="44"
-            height="44"
-          />
+          <picture>
+            <source
+              srcset="
+                ./img/bc_wumen_with_glasses.jpg    1x,
+                ./img/bc_wumen_with_glasses@2x.jpg 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./img/tablet_wumen_with_glasses.jpg    1x,
+                ./img/tablet_wumen_with_glasses@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./img/wumen_with_glasses.jpg    1x,
+                ./img/wumen_with_glasses@2x.jpg 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img
+              class="hero-avatar"
+              src="./img/wumen_with_glasses.jpg"
+              alt="Wumen without glasses"
+              width="44"
+              height="44"
+            />
+          </picture>
         </li>
       </ul>
       <p class="tex-scroll"><u class="line">Scroll down</u></p>
@@ -67,30 +113,25 @@
     <div class="container-watches-hero">
       <picture>
         <source
-          srcset="
-            ../img/hero_img/watches_bc_hero.jpg,
-            ../img/hero_img/watches_bc_hero@2x.jpg
-          "
+          srcset="./img/watches_bc_hero.jpg 1x, ./img/watches_bc_hero@2x.jpg"
           media="(min-width: 1280px)"
         />
         <source
           srcset="
-            ../img/hero_img/watches_tablet_hero.jpg,
-            ../img/hero_img/watches_tablet_hero@2x.jpg
+            ./img/watches_tablet_hero.jpg,
+            ./img/watches_tablet_hero@2x.jpg
           "
           media="(min-width: 768px)"
         />
         <source
-          srcset="
-            ../img/hero_img/watches_mobil_hero.jpg,
-            ../img/hero_img/watches_mobil _hero@2x.jpg
-          "
+          srcset="./img/watches_mobil_hero.jpg, ./img/watches_mobil_hero@2x.jpg"
           media="(max-width: 767px)"
         />
         <img
           class="watches-hero"
-          src="../img/hero_img/watc    hes_mobil_hero.jpg"
+          src="./img/watches_mobil_hero.jpg"
           alt="Watches end hero"
+          loading="lazy"
         />
       </picture>
     </div>

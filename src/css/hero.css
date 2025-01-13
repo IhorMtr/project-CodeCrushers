@@ -18,9 +18,6 @@
     
 }
 }
-
-
-
 .title-hero {
 font-family: var(--font-family);
 font-weight: 600;
@@ -163,9 +160,14 @@ padding-bottom: 28px;
         text-decoration-skip-ink: none;
         color: var(--main);
         padding-top: 26px;
+        cursor: pointer;
         
 }
-@media screen and (min-width: 768px) {
+ .tex-scroll:hover,
+ .tex-scroll:focus {
+   color: #404bbf;
+ }
+@media screen and(min-width: 768px) {
     .tex-scroll {
        
         font-size: 20px;
@@ -178,7 +180,7 @@ padding-bottom: 28px;
     width: 335px;
     background-image: rgba(12, 12, 12, 0.2);
     display: block;
-        max-width: 100%;
+    max-width: 100%;
     }
 @media screen and (min-width: 768px) {
     .container-watches-hero {
@@ -190,6 +192,10 @@ padding-bottom: 28px;
     .container-watches-hero {
             width: 1150px;
         }
+                .tex-scroll:hover,
+                .tex-scroll:focus {
+                    color: #404bbf;
+                }
 }
     
 

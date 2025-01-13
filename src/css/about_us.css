@@ -1,106 +1,88 @@
 .about {
-    margin-top: 30px;
-   
-   
+  margin-top: 30px;
 }
 .about-content {
-    border-radius: 30px;
-    background: #f3f3f3;
-    padding: 40px 20px;
-    margin-bottom: 20px;
-   
-   
-  
-    
-    
+  border-radius: 30px;
+  background: #f3f3f3;
+  padding: 40px 20px;
+  margin-bottom: 20px;
 }
-
 
 .about-title {
-letter-spacing: -0.02em;
-color: #0c0c0c;
-margin-bottom: 28px;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+  margin-bottom: 28px;
 }
 .about-text {
-    font-size: 14px;
-    line-height: 1.28;
-    letter-spacing: -0.02em;
-    margin-bottom: 20px;
-   
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  margin-bottom: 20px;
 }
 .item {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 .about-btn {
-    display: inline-block;
-    padding: 15px 20px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.28;
-    text-align: center;
-    border-radius: 16px;
-    width: 160px;
-    height: 48px;
-    color: #fbfbfb;
-    background: #3350e9;
-    transition: background-color 250ms ease; 
-   
+  display: inline-block;
+  padding: 15px 20px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  text-align: center;
+  border-radius: 16px;
+  width: 160px;
+  height: 48px;
+  color: #fbfbfb;
+  background: #3350e9;
+  transition: background-color 250ms ease;
 }
 .about-btn:focus,
 .about-btn:hover {
-    background: #1f3cd4;
-   
+  background: #1f3cd4;
 }
 
-
-
 @media screen and (min-width: 768px) {
-    .about {
-       margin-top: 40px;
-       margin-bottom: 40px;
-    }
-    .about-title {
-        margin-bottom: 40px;
-        font-size: 48px;
-    }
-    .about-text {
-        font-size: 16px;
-    }
-    .item {
-        margin-bottom: 60px;
-    }
-    .about-content {
-        padding: 80px 60px;
-        border-radius: 50px;
-    }
-    .about-img {
-        width: 100%;
-    }
-    
+  .about {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .about-title {
+    margin-bottom: 40px;
+    font-size: 48px;
+  }
+  .about-text {
+    font-size: 16px;
+  }
+  .item {
+    margin-bottom: 60px;
+  }
+  .about-content {
+    padding: 80px 60px;
+    border-radius: 50px;
+  }
+  .about-img {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 1280px) {
-    .about-container {
-        display: flex;
-        gap: 40px;
-        
-    }
-    .about {
-        margin-top: 50px;
-        
-    }
-    .about-title {
-        margin-bottom: 40px;
-    }
-    .about-content {
-        width: 580px;
-        height: 532px;
-        margin-bottom: 0;
-        
-    }
-    
-    .item {
-        margin-bottom: 40px;
-    }
-    
+  .about-container {
+    display: flex;
+    gap: 40px;
+  }
+  .about {
+    margin-top: 50px;
+  }
+  .about-title {
+    margin-bottom: 40px;
+  }
+  .about-content {
+    width: 580px;
+    height: 532px;
+    margin-bottom: 0;
+  }
+
+  .item {
+    margin-bottom: 40px;
+  }
 }

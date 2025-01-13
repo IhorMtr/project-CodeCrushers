@@ -112,12 +112,15 @@
   margin-top: 28px;
 }
 
+.footer-copyright-title {
+  margin-bottom: 8px;
+}
+
 .footer-copyright-link {
   font-weight: 500;
   font-size: 10px;
   line-height: 1.4;
   letter-spacing: -0.02em;
   color: rgba(251, 251, 251, 0.5);
-  margin-top: 8px;
   margin-right: 20px;
 }

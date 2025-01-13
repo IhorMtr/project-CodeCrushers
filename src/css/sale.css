@@ -1,23 +1,13 @@
-.sale-section {
-    font-family: "Gilroy", sans-serif;
-}
-
 .sale-container {
     min-width: 320px;
     max-width: 375px;
-    font-family: inherit;
     margin: 0 auto;
 
 }
 
 .sale-header {
-    font-family: inherit;
-    letter-spacing: -0.02em;
-    color: #0c0c0c;
     margin-bottom: 24px;
 }
-
-.sale-image-box {}
 
 @media only screen and (min-width:768px) {
     .sale-container {
@@ -173,16 +163,13 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 1.16667;
-    letter-spacing: -0.02em;
     text-decoration: line-through;
     color: rgba(251, 251, 251, 0.5);
 }
 
 .sale-info-text {
-    font-weight: 500;
     font-size: 14px;
     line-height: 1.28571;
-    letter-spacing: -0.02em;
     color: rgba(251, 251, 251, 0.7);
     margin-bottom: 40px;
 }

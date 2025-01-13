@@ -1,9 +1,5 @@
 .advertisement-container {
-  background-image: linear-gradient(
-      rgba(12, 12, 12, 0.2),
-      rgba(12, 12, 12, 0.2)
-    ),
-    url(./img/advertisement-bg-mob.png);
+  background-image: url(./img/advertisement-bg-mob.png);
   background-color: #0c0c0c;
   border-radius: 30px;
   background-size: cover;
@@ -14,15 +10,12 @@
 
 @media only screen and (min-resolution: 192dpi) {
   .advertisement-container {
-    background-image: linear-gradient(
-        rgba(12, 12, 12, 0.2),
-        rgba(12, 12, 12, 0.2)
-      ),
-      url(./img/advertisement-bg-mobX2.png);
+    background-image: url(./img/advertisement-bg-mobX2.png);
   }
 }
 
 .advertisement-text {
+  font-weight: 600;
   font-size: 32px;
   line-height: 1;
   letter-spacing: -0.02em;
@@ -44,27 +37,20 @@
   border: 1px solid rgba(251, 251, 251, 0.15);
   border-radius: 16px;
   padding: 15px 44px;
+  width: 160px;
   transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms,
     background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 @media only screen and (min-width: 768px) {
   .advertisement-container {
-    background-image: linear-gradient(
-        rgba(12, 12, 12, 0.2),
-        rgba(12, 12, 12, 0.2)
-      ),
-      url(../img/advertisement-bg-tab.png);
+    background-image: url(./img/advertisement-bg-tab.png);
     padding: 80px 64px;
   }
 
   @media only screen and (min-resolution: 192dpi) {
     .advertisement-container {
-      background-image: linear-gradient(
-          rgba(12, 12, 12, 0.2),
-          rgba(12, 12, 12, 0.2)
-        ),
-        url(../img/advertisement-bg-tabX2.png);
+      background-image: url(./img/advertisement-bg-tabX2.png);
     }
   }
 
@@ -77,32 +63,21 @@
 
 @media only screen and (min-width: 1280px) {
   .advertisement-container {
-    background-image: linear-gradient(
-        rgba(12, 12, 12, 0.2),
-        rgba(12, 12, 12, 0.2)
-      ),
-      url(../img/advertisement-bg.png);
+    background-image: url(./img/advertisement-bg.png);
     padding: 83px 80px;
     display: flex;
-    gap: 140px;
     justify-content: space-between;
     align-items: flex-start;
   }
 
   @media only screen and (min-resolution: 192dpi) {
     .advertisement-container {
-      background-image: linear-gradient(
-          rgba(12, 12, 12, 0.2),
-          rgba(12, 12, 12, 0.2)
-        ),
-        url(../img/advertisement-bgX2.png);
+      background-image: url(./img/advertisement-bgX2.png);
     }
   }
 
   .advertisement-text {
-    font-size: 48px;
-    line-height: 0.92;
-    margin-bottom: 32px;
+    margin-bottom: 0;
     max-width: 690px;
   }
 

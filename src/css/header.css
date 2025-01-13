@@ -8,7 +8,6 @@
 .header-logo-ref {
     font-weight: 500;
     font-size: 16px;
-    text-decoration: none;
 }
 
 .header-logo-menu {
@@ -33,6 +32,10 @@
     .header{
         padding-top: 26px;
         padding-bottom: 26px;
+    }
+    .header-logo-menu{
+        width: 40px;
+        height: 40px;
     }
 
 }

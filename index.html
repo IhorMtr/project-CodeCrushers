@@ -13,7 +13,7 @@
       referrerpolicy="no-referrer"
     />
     <script type="module" crossorigin src="/project-CodeCrushers/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-CodeCrushers/assets/index-BVVUd1Dv.css">
+    <link rel="stylesheet" crossorigin href="/project-CodeCrushers/assets/index-DXdHewgE.css">
   </head>
   <body>
     <header>
@@ -160,7 +160,69 @@
   </div>
 </section>
 
-      
+      <section id="contact_us-section" class="contact-us">
+  <div class="container">
+    <h2 class="contact-titel">Contact Us</h2>
+    <div class="contact-container-box">
+      <div class="contact-form-container">
+        <p class="form-text">
+          Please use the form below to contact us. Enter your name, email,
+          phone, and message and we'll get back to you shortly.
+        </p>
+        <form class="contact-form">
+          <input
+            type="text"
+            name="user-name"
+            class="contact-us-input"
+            id="user-name"
+            placeholder="Name"
+          />
+          <input
+            type="email"
+            name="user-email"
+            class="contact-us-input"
+            id="user-email"
+            placeholder="Email"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          />
+          <input
+            type="tel"
+            name="user-phone"
+            class="contact-us-input"
+            id="user-phone"
+            placeholder="+380"
+            pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$"
+          />
+          <textarea
+            class="contact-us-textarea"
+            name="user-coment"
+            id="user-coment"
+            placeholder="Comment"
+          ></textarea>
+          <button class="contact-us-btn" type="submit">Send</button>
+        </form>
+      </div>
+      <div class="contact-img">
+        <picture>
+          <source
+            srcset="/project-CodeCrushers/assets/rectangle-desktop-UnSeTRyO.jpg 1x, /project-CodeCrushers/assets/rectangle-desktop2x-CZuYdq0v.jpg 2x"
+            media="(min-width:1280px)"
+          />
+          <source
+            srcset="/project-CodeCrushers/assets/rectangle-tab-BuWfGgep.jpg 1x, /project-CodeCrushers/assets/rectangle-tab2x-a_ltvKYd.jpg 2x"
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="/project-CodeCrushers/assets/rectangle-vO-5LEk7.jpg 1x, /project-CodeCrushers/assets/rectangle2x-BZnqu1nq.jpg 2x"
+            media="(max-width:767px)"
+          />
+          <img src="/project-CodeCrushers/assets/rectangle-vO-5LEk7.jpg" alt="rectangle" loading="lazy" />
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
     </main>
 
     <footer></footer>

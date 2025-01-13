@@ -1,0 +1,65 @@
+<section id="contact_us-section" class="contact-us">
+  <div class="container">
+    <h2 class="contact-titel">Contact Us</h2>
+    <div class="contact-container-box">
+      <div class="contact-form-container">
+        <p class="form-text">
+          Please use the form below to contact us. Enter your name, email,
+          phone, and message and we'll get back to you shortly.
+        </p>
+        <form class="contact-form">
+          <input
+            type="text"
+            name="user-name"
+            class="contact-us-input"
+            id="user-name"
+            placeholder="Name"
+          />
+          <input
+            type="email"
+            name="user-email"
+            class="contact-us-input"
+            id="user-email"
+            placeholder="Email"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          />
+          <input
+            type="tel"
+            name="user-phone"
+            class="contact-us-input"
+            id="user-phone"
+            placeholder="+380"
+            pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$"
+          />
+          <textarea
+            class="contact-us-textarea"
+            name="user-coment"
+            id="user-coment"
+            placeholder="Comment"
+          ></textarea>
+          <button class="contact-us-btn" type="submit">Send</button>
+        </form>
+      </div>
+      <div class="contact-img">
+        <picture>
+          <source
+            srcset="
+              ./img/rectangle-desktop.jpg   1x,
+              ./img/rectangle-desktop2x.jpg 2x
+            "
+            media="(min-width:1280px)"
+          />
+          <source
+            srcset="./img/rectangle-tab.jpg 1x, /img/rectangle-tab2x.jpg 2x"
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="./img/rectangle.jpg 1x, /img/rectangle2x.jpg 2x"
+            media="(max-width:767px)"
+          />
+          <img src="./img/rectangle.jpg" alt="rectangle" loading="lazy" />
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>

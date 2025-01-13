@@ -1,10 +1,13 @@
+header{
+    border-bottom: 1px solid rgba(12, 12, 12, 0.1);
+}
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    border-bottom: 1px solid rgba(12, 12, 12, 0.1);
+    
 }
 .header-logo-ref {
     font-weight: 500;

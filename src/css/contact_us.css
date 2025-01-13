@@ -3,6 +3,7 @@
 }
 
 .contact-form-container {
+  flex: 1;
   padding: 48px 24px;
   background: var(--cards);
   border-radius: 30px;

@@ -44,26 +44,20 @@
         <picture>
           <source
             srcset="
-              /img/rectangle-desktop.jpg   1x,
-              /img/rectangle-desktop2x.jpg 2x
+              ./img/rectangle-desktop.jpg   1x,
+              ./img/rectangle-desktop2x.jpg 2x
             "
             media="(min-width:1280px)"
           />
           <source
-            srcset="/img/rectangle-tab.jpg 1x, /img/rectangle-tab2x.jpg 2x"
+            srcset="./img/rectangle-tab.jpg 1x, /img/rectangle-tab2x.jpg 2x"
             media="(min-width:768px)"
           />
           <source
-            srcset="/img/rectangle.jpg 1x, /img/rectangle2x.jpg 2x"
+            srcset="./img/rectangle.jpg 1x, /img/rectangle2x.jpg 2x"
             media="(max-width:767px)"
           />
-          <img
-            src="/img/rectangle.jpg"
-            width="530"
-            height="556"
-            alt="rectangle"
-            loading="lazy"
-          />
+          <img src="./img/rectangle.jpg" alt="rectangle" loading="lazy" />
         </picture>
       </div>
     </div>

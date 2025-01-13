@@ -28,12 +28,14 @@
 
 @media screen and (min-width: 768px) {
   .footer-container {
-    position: relative;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .inline {
+    display: flex;
+
+    justify-content: space-between;
   }
 }
 
@@ -84,9 +86,6 @@
 
 @media screen and (min-width: 768px) {
   .footer-but-number {
-    position: absolute;
-    top: 0px;
-    right: 0px;
     margin-bottom: 0;
   }
 }
@@ -124,10 +123,6 @@
 @media screen and (min-width: 1280px) {
   .footer-title {
     max-width: 523px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateX(50%);
     font-weight: 600;
   }
 }
@@ -231,7 +226,6 @@
 @media screen and (min-width: 768px) {
   .footer-container-copyright {
     margin-top: 28px;
-    position: relative;
   }
 }
 /* @media screen and (min-width: 1280px) {
@@ -251,7 +245,6 @@
 
 @media screen and (min-width: 768px) {
   .footer-copyright-title {
-    position: absolute;
     left: 0;
     bottom: 0;
     margin-bottom: 0;
@@ -270,9 +263,6 @@
 
 @media screen and (min-width: 768px) {
   .footer-copyright-link {
-    position: absolute;
-    right: 0;
-    bottom: 0;
   }
 }
 /* @media screen and (min-width: 1280px) {

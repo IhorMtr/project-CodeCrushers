@@ -2,8 +2,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 .header-logo-ref {
     font-weight: 500;
@@ -19,9 +17,14 @@
     background-color: transparent;
 }
 .header-nav {
-    display: none;
+    display: flex;
+    gap: 203px;
+
 }
 .header-social-links {
+    display: none;
+}
+.header-nav-list {
     display: none;
 }
 @media screen and (min-width: 768px) {
@@ -43,9 +46,7 @@
     .header-menu-btn {
             display: none;
         }
-     .header-nav {
-                    display: block;
-                }
+     
         .header-social-links {
             display: block;
         }
@@ -96,14 +97,12 @@
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
-            bottom: 0;
+            bottom: -10px;
             width: 8px;
             height: 8px;
             background-color: #3350e9;
             border-radius: 50%;
         }
     
-        .header-nav-list-item-link {
-            padding: 15px 0;
-        }
+       
 }

@@ -109,7 +109,7 @@ header{
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
-            bottom: -10px;
+            bottom: -12px;
             width: 8px;
             height: 8px;
             background-color: #3350e9;

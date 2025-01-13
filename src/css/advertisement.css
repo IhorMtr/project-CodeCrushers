@@ -1,0 +1,89 @@
+.advertisement-container {
+  background-image: url(../img/advertisement-bg-mob.png);
+  background-color: #0c0c0c;
+  border-radius: 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 28px;
+}
+
+@media only screen and (min-resolution: 192dpi) {
+  .advertisement-container {
+    background-image: url(../img/advertisement-bg-mobX2.png);
+  }
+}
+
+.advertisement-text {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  margin-bottom: 28px;
+}
+
+.advertisement-text-span {
+  color: rgba(251, 251, 251, 0.5);
+}
+
+.advertisement-link-button {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: #fbfbfb;
+  border: 1px solid rgba(251, 251, 251, 0.15);
+  border-radius: 16px;
+  padding: 15px 44px;
+  width: 160px;
+  transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms,
+    background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+@media only screen and (min-width: 768px) {
+  .advertisement-container {
+    background-image: url(../img/advertisement-bg-tab.png);
+    padding: 80px 64px;
+  }
+
+  @media only screen and (min-resolution: 192dpi) {
+    .advertisement-container {
+      background-image: url(../img/advertisement-bg-tabX2.png);
+    }
+  }
+
+  .advertisement-text {
+    font-size: 48px;
+    line-height: 0.92;
+    margin-bottom: 32px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .advertisement-container {
+    background-image: url(../img/advertisement-bg.png);
+    padding: 83px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  @media only screen and (min-resolution: 192dpi) {
+    .advertisement-container {
+      background-image: url(../img/advertisement-bgX2.png);
+    }
+  }
+
+  .advertisement-text {
+    margin-bottom: 0;
+    max-width: 690px;
+  }
+
+  .advertisement-link-button:focus,
+  .advertisement-link-button:hover {
+    color: #0c0c0c;
+    background-color: #fbfbfb;
+  }
+}

@@ -251,4 +251,8 @@
     max-width: 279px;
     width: auto;
   }
+  .sale-container {
+    max-width: 280px;
+    min-width: 0;
+  }
 }

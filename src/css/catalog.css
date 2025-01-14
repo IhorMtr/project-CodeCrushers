@@ -1,147 +1,79 @@
-picture{
-    display: flex;
-    margin: 0 auto;
-    width: 208px;
-    height: 226px;
+.catalog-title {
+  margin-bottom: 24px;
 }
-.catalog-section{
-    /* background-color: blue; */
-    max-width: 375px;
-    margin: 0 auto;
+.catalog-list .is-active {
+  display: none;
 }
-.container{
-    /* background-color: red; */
-    padding: 0 auto;
-    margin: 0 auto;
+.catalog-item {
+  background-color: #f3f3f3;
+  border: 1px solid rgba(12, 12, 12, 0.05);
+  border-radius: 30px;
+  padding: 24px 28px;
 }
-
-.catalog-section-list{
-    /* background-color: yellow; */
-    padding-bottom: 40px
-
+.catalog-item:not(:last-child) {
+  margin-bottom: 20px;
 }
-
-.catalog-section-list-item{
-    margin-top: 24px;
-    height: 364px;
-    background: var(--cards);
-    border: 1px solid rgba(12, 12, 12, 0.05);
-    border-radius: 30px;
-
-    
+.catalog-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 28px;
 }
-
-.catalog-section-list-item-pic{
-    margin: 42px 28px 0px 28px;
+.catalog-item-title {
+  margin-bottom: 8px;
 }
-
-.name-and-price-position{
-    margin-top: 28px;
+.catalog-item-price {
+  font-weight: 400;
+  color: rgba(12, 12, 12, 0.5);
 }
-
-.catalog-section-button{
-    color: white;
-    width: 160px;
-    height: 48px;
+.catalog-button {
+  display: block;
+  border-radius: 16px;
+  padding: 15px 44px;
+  margin: 0 auto;
+  color: #fbfbfb;
+  background-color: #3350e9;
+  border: none;
+  width: 160px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+}
+@media only screen and (min-width: 768px) {
+  .catalog-title {
+    margin-bottom: 40px;
+  }
+  .catalog-list .is-active {
     display: block;
-    margin: 0 auto;
-    border-radius: 16px;
-    background: #404BBF;
-    
-    
+  }
+  .catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    column-gap: 16px;
+    row-gap: 32px;
+  }
+  .catalog-item {
+    padding: 34px 38px;
+    width: calc((100% - 16px) / 2);
+  }
+  .catalog-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .catalog-img {
+    margin-bottom: 20px;
+  }
+  .catalog-button {
+    display: none;
+  }
 }
-
-
-/* ---------------------------------------------------------------------MEDIA-------------------------------------------------------------------------
----------------------------------------------------------------------MEDIA-------------------------------------------------------------------------
----------------------------------------------------------------------MEDIA-------------------------------------------------------------------------
----------------------------------------------------------------------MEDIA------------------------------------------------------------------------- */
-
-
-@media screen and (min-width:768px){
-
-    #catalog-section{
-        max-width: 768px;
-        /* background-color: blue; */
-        margin: 0 auto;
-        
-    }
-    h2{
-        
-    }
-
-
-    picture{
-        width: 268px;
-        height: 292px;
-    }
-    .container{
-        max-width: 704px;
-        padding: 0;
-
-
-
-       
-    }
-    .catalog-section-list {
-        margin-top: 40px;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 16px;
-        justify-content: space-between;
-    }
-
-    .catalog-section-list-item {
-        flex: 0 0 344px;
-        width: 368px;
-        height: 414px;
-        margin: 0;
-        box-sizing: border-box;
-    }
-
-
-
-}
-
-
-@media screen and (min-width:1280px){
-
-    #catalog-section{
-        max-width: 1280px;
-        /* background-color: blue; */
-        margin: 0 auto;
-        
-    }
-
-    .container{
-        max-width: 1150px;
-        padding: 0;       
-    }
-
-    .catalog-section-list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 32px 23px; 
-        justify-content: space-between; 
-    }
-    picture{
-        width: 292px;
-        height: 292px;
-    }
-    .catalog-section-list-item {
-        flex: 0 0 368px;
-        height: 414px;
-        margin: 0;
-        box-sizing: border-box;
-    }
-
-    
-        
-    
-    
-
-
-
-    
-
+@media only screen and (min-width: 1280px) {
+  .catalog-item {
+    padding: 30px 38px;
+    width: calc((100% - 46px) / 3);
+  }
+  .catalog-img {
+    margin-bottom: 24px;
+  }
 }

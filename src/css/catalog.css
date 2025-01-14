@@ -5,18 +5,18 @@ picture{
     height: 226px;
 }
 .catalog-section{
-    background-color: blue;
+    /* background-color: blue; */
     max-width: 375px;
     margin: 0 auto;
 }
 .container{
-    background-color: red;
+    /* background-color: red; */
     padding: 0 auto;
     margin: 0 auto;
 }
 
 .catalog-section-list{
-    background-color: yellow;
+    /* background-color: yellow; */
     padding-bottom: 40px
 
 }
@@ -62,7 +62,7 @@ picture{
 
     #catalog-section{
         max-width: 768px;
-        background-color: blue;
+        /* background-color: blue; */
         margin: 0 auto;
         
     }
@@ -77,18 +77,59 @@ picture{
     }
     .catalog-section-list {
         display: flex;
-        flex-wrap: wrap; /* Разрешить перенос элементов */
-        gap: 16px; /* Расстояние между элементами */
-        justify-content: space-between; /* Равномерное распределение */
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: space-between;
     }
 
     .catalog-section-list-item {
-        flex: 0 0 344px; /* Фиксированная ширина */
-        height: 414px; /* Фиксированная высота */
-        margin: 0; /* Убираем отступы, если есть */
-        box-sizing: border-box; /* Учитываем границы и отступы в размерах */
+        flex: 0 0 344px;
+        width: 368px;
+        height: 414px;
+        margin: 0;
+        box-sizing: border-box;
     }
 
 
+
+}
+
+
+@media screen and (min-width:1280px){
+
+    #catalog-section{
+        max-width: 1280px;
+        /* background-color: blue; */
+        margin: 0 auto;
+        
+    }
+
+    .container{
+        max-width: 1150px;
+        padding: 0;       
+    }
+
+    .catalog-section-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px 23px; 
+        justify-content: space-between; 
+    }
+
+    .catalog-section-list-item {
+        flex: 0 0 368px;
+        height: 414px;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    
+        
+    
+    
+
+
+
+    
 
 }

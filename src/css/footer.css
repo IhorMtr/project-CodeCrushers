@@ -87,6 +87,11 @@
   flex-direction: row;
   gap: 16px;
 }
+@media screen and (max-width: 374px) {
+  .footer-menu {
+    gap: 10px;
+  }
+}
 
 .footer-menu-link {
   font-weight: 500;

@@ -37,7 +37,7 @@
 
 @media screen and (min-width: 1280px) {
     .container-title {
-        width: 597px;
+        
 
     }
 }
@@ -212,8 +212,8 @@ margin-bottom: 20px;
 .container-watches-hero {
     width: 335px;
     background-image: rgba(12, 12, 12, 0.2);
-   /*isplay: block;
-    max-width: 100%;*/
+   display: block;
+    max-width: 100%;
     }
 @media screen and (min-width: 768px) {
     .container-watches-hero {

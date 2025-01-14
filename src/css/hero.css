@@ -1,98 +1,129 @@
 .hero {
     min-width: 320px;
     max-width: 375px;
-    padding: 60px 20px 0 20px;
+    padding-top: 60px;
     
 }
 @media screen and (min-width: 768px) {
 .hero {
     max-width: 768px;
-    padding: 80px 32px 0 32px;
-   position: relative;
+    padding-top: 80px;
+   
 }
 }
 @media screen and (min-width: 1280px) {
 .hero {
-     padding: 80px 65px 0px 65px;
+     padding-top: 80px;
       max-width: 1280px;
     
 }
 }
-.title-hero {
-font-family: var(--font-family);
-font-weight: 600;
-font-size: 40px;
-line-height: 95%;
-letter-spacing: -0.02em;
-color: var(--main);
-padding-bottom: 20px;
-}
+.container-title {
+    display: flex;
+    flex-direction: column;
 
 
-.title-part {
-color: var(--accent);
+
 }
 
 @media screen and (min-width: 768px) {
-    .title-hero {
-        font-size: 70px;
-        line-height: 86%;
-        width: 557px;
+    .container-title {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 11px;
         
     }
 }
+
+@media screen and (min-width: 1280px) {
+    .container-title {
+        width: 597px;
+
+    }
+}
+.container-text {
+    width: 335px;
+}
+@media screen and (min-width: 768px) {
+    .container-text {
+            width: 557px;
+        }
+}
+@media screen and (min-width: 1280px) {
+    .container-text {
+            width: 597px;
+        }
+}
+.title-hero {
+
+font-weight: 600;
+font-size: 40px;
+line-height: 0.95;
+letter-spacing: -0.02em;
+color: var(--main);
+margin-bottom: 20px;
+}
+.title-part {
+    color: var(--accent);
+}
+@media screen and (min-width: 768px) {
+    .title-hero {
+        font-size: 70px;
+        line-height: 0.86;
+
+
+    }
+}
+
 @media screen and (min-width: 1280px) {
     .title-hero {
-        font-size: 72px;
-        line-height: 87%;
+        font-size: 72p;
+        line-height: 0.87;
         width: 597px;
     }
-       
+
 }
+
+
+
 .text-hero {
-font-family: var(--font-family);
-font-weight: 500;
-font-size: 14px;
-line-height: 129%;
-letter-spacing: -0.02em;
-color: rgba(12, 12, 12, 0.7);
-padding-bottom: 28px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: rgba(12, 12, 12, 0.7);
+    margin-bottom: 28px;
 }
 @media screen and (min-width: 768px) {
     .text-hero {
        font-size: 16px;
-       line-height: 125%;
+       line-height: 1.25;
        width: 480px;
-    padding-bottom: 40px;
-            
+       margin-bottom: 40px;
     }
-
 }
-@media screen and (min-width: 1280px) {
-    
 
-}
 .container-hero-avatar {
     display: flex;
+    margin-bottom: 28px;
     justify-content: space-between;
-    padding-bottom: 28px;
+    
+    
+    
 }
 @media screen and (min-width: 768px) {
     .container-hero-avatar {
         
         flex-direction: column;
         gap: 180px;
-        position: absolute;
-        top: 80px;
-        right: 32px;
-        padding-bottom: 0;
-        
-    
+       
+       
         
     }
-        .tex-scroll {
-            text-align: right;
-        }
+    .tex-scroll {
+        
+        
+    }
 }
 @media screen and (min-width: 1280px) {
     .container-hero-avatar {
@@ -104,6 +135,7 @@ padding-bottom: 28px;
 }
 .list-avatar {
     display: flex;
+    
 }
 .hero-avatar {
     border-radius: 50%;
@@ -111,21 +143,21 @@ padding-bottom: 28px;
 }
 @media screen and (min-width: 768px) {
     .hero-avatar {
-            width: 56px;
-            height: 56px;
-        }
-                .list-avatar {
-                    transform: translateX(29px);
-                }
+        width: 56px;
+        height: 56px;
+   }
+    .list-avatar {
+     transform: translateX(29px);
+  }
 }
 @media screen and (min-width: 1280px) {
     .hero-avatar {
         width: 60px;
-            height: 60px;
+        height: 60px;
     }
-        .list-avatar {
-            transform: translateX(29px);
-    }
+    /*.list-avatar {
+        transform: translateX(29px);
+    }*/
 }
 .list-blok:nth-child(even) {
     transform: translateX(-11px);
@@ -151,15 +183,16 @@ padding-bottom: 28px;
         }
 }
 .tex-scroll {
-    font-family: var(--font-family);
+    
         font-weight: 500;
         font-size: 14px;
-        line-height: 129%;
+        line-height: 1.29;
         letter-spacing: -0.02em;
         text-decoration: underline;
         text-decoration-skip-ink: none;
         color: var(--main);
         padding-top: 26px;
+       
         cursor: pointer;
         
 }
@@ -169,18 +202,18 @@ padding-bottom: 28px;
  }
 @media screen and(min-width: 768px) {
     .tex-scroll {
-       
-        font-size: 20px;
-        line-height: 100%;
-        padding: 0;
+        ont-size: 20px;
+        line-height: 1;
+        padding-top: 0;
+     
     }
 }
 
 .container-watches-hero {
     width: 335px;
     background-image: rgba(12, 12, 12, 0.2);
-    display: block;
-    max-width: 100%;
+   /*isplay: block;
+    max-width: 100%;*/
     }
 @media screen and (min-width: 768px) {
     .container-watches-hero {
@@ -190,20 +223,21 @@ padding-bottom: 28px;
 }
 @media screen and (min-width: 1280px) {
     .container-watches-hero {
-            width: 1150px;
-        }
-                .tex-scroll:hover,
-                .tex-scroll:focus {
-                    color: #404bbf;
-                }
+        width: 1150px;
+    }
+    .tex-scroll:hover,
+    .tex-scroll:focus {
+        color: #404bbf;
+    }
 }
-    
-
-
-
-.watches-hero {
+    .watches-hero {
     display: block;
     max-width: 100%;
-    border-radius: 50px;
-    
+    border-radius: 30px;
+    }
+@media screen and (min-width: 768px) {
+    .watches-hero {
+        border-radius: 50px;
+        
+}
 }

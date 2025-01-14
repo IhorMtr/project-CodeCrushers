@@ -1,0 +1,142 @@
+ 
+.hero {
+    padding-top: 60px;
+}
+
+.container-title {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 28px;
+}
+
+.container-text {
+    margin-bottom: 28px;
+}
+
+.container-watches-hero {
+    width: 335px;
+    background-image: rgba(12, 12, 12, 0.2);
+    display: block;
+    max-width: 100%;
+}
+
+.container-hero-avatar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.title-hero {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+}
+
+.text-hero {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: rgba(12, 12, 12, 0.7);
+}
+
+.title-part {
+    color: var(--accent);
+}
+
+.tex-scroll {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
+    text-decoration: underline;
+}
+
+.watches-hero {
+    border-radius: 30px;
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        padding-top: 80px;
+    }
+
+    .container-title {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 11px;
+    }
+
+    .container-text {
+        max-width: 557px;
+        margin-bottom: 0;
+    }
+
+    .title-hero {
+        font-size: 70px;
+        line-height: 0.86;
+    }
+
+    .text-hero {
+        font-size: 16px;
+        line-height: 1.25;
+        max-width: 480px;
+    }
+
+    .container-hero-avatar {
+        flex-direction: column;
+        gap: 180px;
+    }
+
+    .tex-scroll {
+        font-size: 20px;
+    }
+
+    .tex-scroll {
+        line-height: 1;
+    }
+
+    .container-watches-hero {
+        width: 704px;
+    }
+
+    .watches-hero {
+        border-radius: 50px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .container-title {
+        margin-bottom: 40px;
+    }
+
+    .container-text {
+        max-width: 597px;
+    }
+
+    .title-hero {
+        font-size: 72px;
+        line-height: 0.87;
+        max-width: 597px;
+    }
+
+    .container-hero-avatar {
+        gap: 189px;
+        right: 65px;
+    }
+
+    .tex-scroll:hover,
+    .tex-scroll:focus {
+        color: #404bbf;
+    }
+
+    .container-watches-hero {
+        width: 1150px;
+    }
+
+    .tex-scroll:hover,
+    .tex-scroll:focus {
+        color: #404bbf;
+    }
+}

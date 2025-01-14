@@ -1,0 +1,93 @@
+picture{
+    display: flex;
+    margin: 0 auto;
+    width: 208px;
+    height: 226px;
+}
+.catalog-section{
+    background-color: blue;
+    max-width: 375px;
+    margin: 0 auto;
+}
+.container{
+    background-color: red;
+    padding: 0 auto;
+    margin: 0 auto;
+}
+
+.catalog-section-list{
+    background-color: yellow;
+    /* width: 335px; */
+}
+
+.catalog-section-list-item{
+    margin-top: 20px;
+    background-color: gray;
+    width: 335px;
+    height: 364px;
+    border: 1px solid rgba(12, 12, 12, 0.05);
+    border-radius: 30px;
+
+    
+}
+
+.catalog-section-list-item-pic{
+    margin: 42px 28px 0px 28px;
+}
+
+.name-and-price-position{
+    margin-top: 28px;
+}
+
+.catalog-section-button{
+    color: white;
+    width: 160px;
+    height: 48px;
+    margin: 40px 87px 0px 87px;
+
+    border-radius: 16px;
+    background: #404bbf;
+    
+    
+}
+
+
+/* ---------------------------------------------------------------------MEDIA-------------------------------------------------------------------------
+---------------------------------------------------------------------MEDIA-------------------------------------------------------------------------
+---------------------------------------------------------------------MEDIA-------------------------------------------------------------------------
+---------------------------------------------------------------------MEDIA------------------------------------------------------------------------- */
+
+
+@media screen and (min-width:768px){
+
+    .catalog-section{
+        max-width: 768px;
+    }
+
+    .container{
+        max-width: 704px;
+        padding: 0;
+
+
+
+       
+    }
+
+
+    .catalog-section-list-item{
+        display: flex;
+        width: calc((100% - 16px) / 2);
+        max-width: 344px;
+        height: 414px;
+        
+    }
+
+
+    .catalog-section-list{
+        
+        /* width: 704px; */
+    }
+
+
+
+}

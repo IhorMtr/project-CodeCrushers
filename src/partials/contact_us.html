@@ -14,6 +14,7 @@
             class="contact-us-input"
             id="user-name"
             placeholder="Name"
+            required
           />
           <input
             type="email"
@@ -22,6 +23,7 @@
             id="user-email"
             placeholder="Email"
             pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            required
           />
           <input
             type="tel"
@@ -30,6 +32,7 @@
             id="user-phone"
             placeholder="+380"
             pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$"
+            required
           />
           <textarea
             class="contact-us-textarea"
@@ -48,14 +51,17 @@
               ./img/rectangle-desktop2x.jpg 2x
             "
             media="(min-width:1280px)"
+            loading="lazy"
           />
           <source
             srcset="./img/rectangle-tab.jpg 1x, /img/rectangle-tab2x.jpg 2x"
             media="(min-width:768px)"
+            loading="lazy"
           />
           <source
             srcset="./img/rectangle.jpg 1x, /img/rectangle2x.jpg 2x"
             media="(max-width:767px)"
+            loading="lazy"
           />
           <img src="./img/rectangle.jpg" alt="rectangle" loading="lazy" />
         </picture>

@@ -98,7 +98,6 @@
   background-color: var(--accent);
 }
 
-.activ-menu-link:focus::after,
 .activ-menu-link:active::after {
   background-color: var(--accent);
 }
